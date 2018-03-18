@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        android:title="@string/hint_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/menu_options"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_dots_vertical_white_24dp">
+
+        <menu>
+
+            <item android:id="@+id/miFavorite"
+                app:showAsAction="ifRoom"
+                android:title="@string/menu_favorite_fragment"
+                />
+
+        </menu>
+
+    </item>
+
+
+</menu>
